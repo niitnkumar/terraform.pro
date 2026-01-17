@@ -1,7 +1,7 @@
 
 #vpc configuration
 region = "ap-south-1"
-name = "tangelo"
+name = ""
 vpc_cidr = "10.0.0.0/16"
 enable_dns_hostnames = true
 enable_dns_support = true
@@ -47,7 +47,7 @@ web_egress_rules = [
 #common tags
 environment = "dev"
 owner = "devops"
-project = "tangelo"
+project = ""
 
 
 # VPC Peering Configurations
@@ -67,6 +67,7 @@ vpc_peering_configurations = {
     peer_vpc_cidr      = "172.32.0.0/16"  # Replace with your staging VPC CIDR
   }
 }
+
 
 
 
