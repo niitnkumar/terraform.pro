@@ -1,6 +1,6 @@
 # Development Environment — Terraform (dev)
 
-This directory contains the Terraform configuration for the development environment of the Tangelo project.
+This directory contains the Terraform configuration for the development environment of the project.
 
 Overview
 - Purpose: Provision a VPC, subnets, networking constructs, web security group(s), and optional VPC peering connections used by the development environment.
@@ -76,7 +76,7 @@ vpc_peering_configurations = {
   "prod" = {
     peer_vpc_id           = "vpc-01234567"
     auto_accept           = true
-    peering_name          = "tangelo-prod-peer"
+    peering_name          = "prod-peer"
     peer_route_table_ids  = ["rtb-01234567"]
     peer_vpc_cidr         = "172.31.0.0/16"
   }
